@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Almendra+Display&family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Roboto&display=swap"
+    rel="stylesheet">
+
+
+  <title>The Company</title>
+</head>
+
+<body>
+  <header>
+    <h1>-THE COMPANY-</h1>
+    <p>Här inne hittar vi mer info om produkterna som finns i sortimentet </p>
+    <nav>
+      <a href="index.html">Startsida</a>
+      <a class="active" href="produkt.html">Produktlista</a>
+      <a href="om.html">Butiker</a>
+      <a href="saldo.html">Saldolista</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <button class="add-product-button">Lägg till produkt här</button>
+
+
+    <form class="add-product-form" action="/api/products" method="post">
+      <h2>Lägg till en produkt i sortimentet här:</h2>
+      <label>
+        Produktnamn:
+        <input type="text" placeholder="Produktnamn" name="name" required minlength="1">
+      </label>
+      <label>
+        Beskrivning:
+        <input type="text" placeholder="Beskrivning" name="description" required minlength="1">
+      </label>
+      <label>
+        Pris:
+        <input type="number" placeholder="Pris" name="price" required minvalue="1">
+      </label>
+      <input type="submit" value="Uppdatera!">
+      <input type="submit" value="Avbryt!" onclick=goBack()>
+
+    </form>
+
+    <form class="change-product-form" action="" method="put">
+      <h2>Ändra informartion om en produkt i sortimentet här:</h2>
+      <label>
+        Produktnamn:
+        <input type="text" placeholder="Produktnamn" name="name" required minlength="1">
+      </label>
+      <label>
+        Beskrivning:
+        <input type="text" placeholder="Beskrivning" name="description" required minlength="1">
+      </label>
+      <label>
+        Pris:
+        <input type="number" placeholder="Pris" name="price" required minvalue="1">
+      </label>
+
+
+      <input type="submit" value="Uppdatera">
+      <input type="submit" value="Avbryt!" onclick=goBack()>
+    </form>
+  </main>
+  <script src="main.js"></script>
+  <footer>
+    &#169; Lisa Hultgren &#129395;
+    <hr> Mölnlycke - 2021</p>
+  </footer>
+</body>
+
+
+</html>

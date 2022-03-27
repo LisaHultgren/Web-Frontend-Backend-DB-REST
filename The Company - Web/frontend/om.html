@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Almendra+Display&family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Roboto&display=swap"
+    rel="stylesheet">
+
+  <title>The Company</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>-THE COMPANY-</h1>
+    <p>Här hittar vi information om butiker. </p>
+    <nav>
+      <a href="index.html">Startsida</a>
+      <a href="produkt.html">Produktlista</a>
+      <a class="active" href="om.html">Butiker</a>
+      <a href="saldo.html">Saldolista</a>
+
+    </nav>
+
+
+  </header>
+  <main>
+
+    <button class="add-store-button">Lägg till en butik</button>
+    <form class="add-store-form" action="/api/stores" method="post">
+      <p>
+
+      </p>
+      <h2>Lägg till en butik:</h2>
+      <label>
+        Butiksnamn:
+        <input type="text" placeholder="Namn" name="name" required minlength="1">
+      </label>
+      <label>
+        Stad:
+        <input type="text" placeholder="Stad" name="city" required minlength="1">
+      </label>
+
+      <input type="submit" value="Uppdatera!">
+      <input type="submit" value="Avbryt!" onclick=goBack()>
+
+
+    </form>
+    <form class="change-store-form" action="" method="put">
+      <h2>Ändra informartion om en butik här:</h2>
+      <label>
+        Butiksnamn:
+        <input type="text" placeholder="namn" name="name" required minlength="1">
+      </label>
+      <label>
+        Adress:
+        <input type="text" placeholder="postadress" name="address" required minlength="1">
+      </label>
+      <label>
+        Stad:
+        <input type="text" placeholder="stad" name="city" required minlength="1">
+      </label>
+      <label>
+        Telefonnr:
+        <input type="text" placeholder="telefonnr" name="phone" required minlength="1">
+      </label>
+
+      <input type="submit" value="Uppdatera!">
+      <input type="submit" value="Avbryt!" onclick=goBack()>
+    </form>
+  </main>
+
+  <script src=main.js></script>
+  <footer>
+    &#169; Lisa Hultgren &#129395;
+    <hr> Mölnlycke - 2021</p>
+  </footer>
+</body>
+
+</html>

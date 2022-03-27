@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Almendra+Display&family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Roboto&display=swap"
+    rel="stylesheet">
+  <title>The Company</title>
+</head>
+
+<body>
+  <header>
+    <h1>-THE COMPANY-</h1>
+    <p>Här inne kan vi se lagersaldo för centrallager och butiker. </p>
+    <nav>
+      <a href="index.html">Startsida</a>
+      <a href="produkt.html">Produktlista</a>
+      <a href="om.html">Butiker</a>
+      <a class="active" href="saldo.html">Saldolista</a>
+    </nav>
+  </header>
+  <main>
+    <form class="change-stock-form" action="" method="put">
+      <h2>Ändra saldo här:</h2>
+      <label>
+        LagerID-#:
+        <input type="number" placeholder="LagerID-#" name="id" required minlength="1">
+      </label>
+      <label>
+        Nytt saldo:
+        <input type="number" placeholder="Nytt saldo" name="quantity" required minlength="1">
+      </label>
+      <input type="submit" value="Uppdatera">
+      <input type="submit" value="Avbryt!" onclick=goBack()>
+    </form>
+
+
+  </main>
+  <script src=main.js></script>
+</body>
+<footer>
+  &#169; Lisa Hultgren &#129395;
+  <hr> Mölnlycke - 2021</p>
+</footer>
+
+</html>
