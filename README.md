@@ -1,2 +1,4 @@
 # Web-Frontend-Backend-DB-REST
-A school project - created a web application with frontend, backend, database and REST api
+A school project - created a web application with frontend, backend, database and REST api.
+
+JavaScript,CSS,HTML,betterSQLite  
